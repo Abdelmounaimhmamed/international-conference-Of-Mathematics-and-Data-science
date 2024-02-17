@@ -1,12 +1,7 @@
-
-// import {  Image } from "@nextui-org/react"
-// import AdsClickIcon from '@mui/icons-material/AdsClick';
 import {  Zoom } from "react-awesome-reveal";
 
 
-
 const Orginizer = () => {
-
     const someData = [
         {id : 1 , imguri : "ensa.png" , link : "" ,name : "The National School of Applied Sciences of Khouribga"},
         {id : 2 , imguri : "amds.jpeg" , link : "" ,name : "AMMDS Morrocan Association of Mathematics and Data Science"},

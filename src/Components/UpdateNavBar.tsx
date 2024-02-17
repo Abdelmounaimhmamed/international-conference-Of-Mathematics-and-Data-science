@@ -6,8 +6,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 
 
-
-
 const Navbar = () => {
     const [state , setState] = useState(true);
     const [isFixed, setFixed] = useState(false); 
@@ -16,20 +14,22 @@ const Navbar = () => {
         const  handleScroll = () =>  {
         const heroSectionEl  = document.getElementById('hero-section');
         const heroSectionRect = heroSectionEl?.getBoundingClientRect();
-        if(heroSectionRect !== undefined){
-            const heroSectionBottom  =  heroSectionRect.bottom ; 
-            if (window.pageYOffset >= heroSectionBottom) {
-                setFixed(true);  
-            }
-            if(window.pageYOffset <= heroSectionBottom){
-                setFixed(false); 
-            }
-            }
+        // @ts-ignore
+        const heroSectionBottom  =  heroSectionRect.bottom ; 
+        
+        if (window.pageYOffset >= heroSectionBottom) {
+            setFixed(true);  
+        }
+        if (window.pageYOffset <= heroSectionBottom){
+            setFixed(false); 
+        }
+        }
+
             window.addEventListener('scroll', handleScroll);
             return () => {
             window.removeEventListener('scroll', handleScroll);
             };
-        }
+        
 
     }, []);
 
