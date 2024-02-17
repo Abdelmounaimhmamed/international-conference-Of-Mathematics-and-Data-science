@@ -18,7 +18,6 @@ import Program from './Components/program';
 function App() {
   return (
     <>
-     
           <div className='custom-class'></div>
             <NavBar />
             <Hero/> 
