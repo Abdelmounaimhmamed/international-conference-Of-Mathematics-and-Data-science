@@ -41,12 +41,12 @@ const NavBar = () => {
             <Fade cascade damping={0.2}>
                 <ul className="  flex flex-row justify-center items-center text-white " >
                     <li><Link to="/" className="text-xl mx-3 font-medium">Home</Link></li>
-                    <li><a href="#callpaper" className="text-xl mx-3 font-medium">CallPapers</a></li>
-                    <li><a href="#Speakers" className="text-xl mx-3 font-medium">Speakers</a></li>
-                    <li><a href="#Orginzers" className="text-xl mx-3 font-medium">Orginzers</a></li>
-                    <li><a href="#Community" className="text-xl mx-3 font-medium">Community</a></li>
-                    <li><a href="#Pogram" className="text-xl mx-3 font-medium">Pogram</a></li>
-                    <li><a href="#ContactUs" className="text-xl mx-3 font-medium">ContactUs</a></li>
+                    <li><a href="#callpaper" className="text-xl mx-1 font-medium">CallPapers</a></li>
+                    <li><a href="#Speakers" className="text-xl mx-1 font-medium">Speakers</a></li>
+                    <li><a href="#Orginzers" className="text-xl mx-1 font-medium">Orginzers</a></li>
+                    <li><a href="#Community" className="text-xl mx-1 font-medium">Community</a></li>
+                    <li><a href="#Pogram" className="text-xl mx-1 font-medium">Pogram</a></li>
+                    <li><a href="#ContactUs" className="text-xl mx-1 font-medium">ContactUs</a></li>
                     <Button className="mx-4 text-white" variant="bordered"><Link to={"/login"} className="text-xl  font-medium">Login</Link></Button>
                 </ul>
             </Fade>

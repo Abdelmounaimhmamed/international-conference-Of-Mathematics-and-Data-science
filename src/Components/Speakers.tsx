@@ -3,7 +3,7 @@
 import AddLinkIcon from '@mui/icons-material/AddLink';
 import { Avatar } from '@nextui-org/react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { Fade } from 'react-awesome-reveal';
+import {  Zoom } from 'react-awesome-reveal';
 
 const Speakers = () => {
     const profiles = [
@@ -17,7 +17,7 @@ const Speakers = () => {
     <div id="Speakers" className="container flex flex-col justify-center items-center ">
         <h1 className="font-medium text-5xl my-12 develus">SPEAKERS</h1>
         <div className='w-full h-full flex flex-row justify-center items-center flex-wrap '>
-            <Fade cascade damping={0.2}>
+            <Zoom cascade damping={0.1}>
                 {
                     profiles.map(profile => {
                         return (
@@ -35,7 +35,7 @@ const Speakers = () => {
                         )
                     })
                 }
-            </Fade>
+            </Zoom>
         </div>
     </div>
   )

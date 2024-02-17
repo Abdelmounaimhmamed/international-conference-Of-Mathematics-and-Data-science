@@ -1,7 +1,20 @@
+import { useEffect, useState } from "react"
 import Messages from "./Messages"
 import NavBarAdmin from "./NavBarAdmin"
+import { useNavigate } from "react-router-dom";
 
 const DashBoard = () => {
+
+  const user   = useState<string>(JSON.parse(localStorage.getItem("admin") || ""));
+ 
+  const navigate = useNavigate();
+  useEffect(() => {
+      if(user === null || !user){
+        navigate("/login");
+      }
+  },[]);
+
+  
   return (
     <div>
         <div className='custom-class'></div>

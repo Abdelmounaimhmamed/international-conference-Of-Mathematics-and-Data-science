@@ -13,10 +13,10 @@ const Fact = () => {
       {id: 4 , img : "comf.svg" ,subTitlle : "Welcome" ,title : " to ICMDS 2024"},
     ]
     const data1 = [
-        {id : 1 ,  title : "RENOWNED SPEAKERS" , icon : <GroupIcon fontSize="large" className="text-white my-3"/> , desc : "Attend Specialised Talks and Share Scientific Expertise"},
-        {id : 2 ,  title : "SPECIAL FEATURED EVENTS" , icon : <BookmarkIcon fontSize="large" className="text-white my-3"/>, desc : "Share knowledge, Experience and Learn More"},
-        {id : 3 ,  title : "PUBLICATION OPPORTUNITIES" , icon : <MenuBookIcon fontSize="large" className="text-white my-3"/> , desc : "Conference Proceedings, Affiliated Journals"},
-        {id : 4 ,  title : "ENHANCE YOUR NETWORK" , icon :<NetworkCheckIcon fontSize="large" className="text-white my-3"/>, desc : "Highly Interactive Industry Participation"},
+        {id : 1 ,  title : "RENOWNED SPEAKERS" , icon : <GroupIcon fontSize="large" className="text-black my-3"/> , desc : "Attend Specialised Talks and Share Scientific Expertise"},
+        {id : 2 ,  title : "SPECIAL FEATURED EVENTS" , icon : <BookmarkIcon fontSize="large" className="text-black my-3"/>, desc : "Share knowledge, Experience and Learn More"},
+        {id : 3 ,  title : "PUBLICATION OPPORTUNITIES" , icon : <MenuBookIcon fontSize="large" className="text-black my-3"/> , desc : "Conference Proceedings, Affiliated Journals"},
+        {id : 4 ,  title : "ENHANCE YOUR NETWORK" , icon :<NetworkCheckIcon fontSize="large" className="text-black my-3"/>, desc : "Highly Interactive Industry Participation"},
     ]
 
   return (
@@ -59,14 +59,14 @@ const Fact = () => {
                                     <Card
                                         isFooterBlurred
                                         radius="lg"
-                                        className=" mx-3 my-10  w-[300px] h-[200px] bg-transparent border-2 border-gray-700 before:bg-white/10 shadow-small ml-1 z-10" 
+                                        className=" mx-3 my-10  w-[300px] h-[200px] bg-transparent  border-2 border-gray-300 before:bg-white/10 shadow-medium  ml-1 z-10" 
                                         key={dt.id}>
-                                            <div className="w-full h-full flex flex-col justify-center items-center">
-                                                <div className="">
+                                            <div className="w-full h-full flex flex-col justify-center items-center bg-[#ecf5ff] ">
+                                                <div className="t">
                                                     {dt.icon} 
                                                 </div>                                              
                                                 <h1 className="develus text-xl my-3 font-bold w-full text-center">{dt.title}</h1>
-                                                <p className="text-center text-gray-400">{dt.desc}</p>
+                                                <p className="text-center text-gray-600">{dt.desc}</p>
                                             </div>
                                       </Card>
 

@@ -1,12 +1,21 @@
 import { Button, Textarea } from "@nextui-org/react"
 import NavBarAdmin from "./NavBarAdmin"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 // import { useState } from "react"
 
 const AdminAbout = () => {
-    // const [textField  , setTextField ] = useState("");
     const handleSendToServer = async () => {
         
     }
+    const user   = useState<string>(JSON.parse(localStorage.getItem("admin")|| "")) ;
+    const navigate = useNavigate();
+  
+  useEffect(() => {
+      if(!user){
+        navigate("/login");
+      }
+  }) 
     
   return (
     <div>

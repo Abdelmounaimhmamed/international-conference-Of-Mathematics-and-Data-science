@@ -6,8 +6,8 @@ const NavBarAdmin = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
+        localStorage.setItem("admin" , "");
         navigate("/login");
-        localStorage.setItem("authentiatedUser" , "");
     }
 
   return (

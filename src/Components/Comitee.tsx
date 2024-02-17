@@ -97,8 +97,8 @@ const Comitee = () => {
     ]
     const itemClasses = {
         base: "py-0 w-full",
-        title: "font-medium text-xl  text-gray-500 border-b-2 border-gray-700 ",
-        trigger: "px-2 py-0  rounded-lg h-14 flex items-center",
+        title: "font-medium text-xl  text-gray-500 bg-gray-900",
+        trigger: "px-2 py-0  rounded-lg h-14 flex items-center bg-gray-900",
         indicator: "text-medium",
         content: "text-small px-2",
         

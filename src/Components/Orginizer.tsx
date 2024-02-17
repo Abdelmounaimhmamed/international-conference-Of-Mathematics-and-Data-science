@@ -1,7 +1,7 @@
 
-import {  Image } from "@nextui-org/react"
-import AdsClickIcon from '@mui/icons-material/AdsClick';
-import { Fade } from "react-awesome-reveal";
+// import {  Image } from "@nextui-org/react"
+// import AdsClickIcon from '@mui/icons-material/AdsClick';
+import {  Zoom } from "react-awesome-reveal";
 
 
 
@@ -20,21 +20,24 @@ const Orginizer = () => {
         <h1 className="font-medium text-5xl my-12 develus">ORGANIZERS & PARTNERS</h1>
 
         <div className=" flex flex-row justify-center items-center flex-wrap">
-            <Fade cascade damping={0.2}>
+            <Zoom cascade damping={0.2}>
                 {
                     someData.map(data => {
                         return (
-                            <div className="bg-gray-900 w-[350px] min-h-[200Px] border-2 border-gray-500 rounded-xl flex flex-col justify-evenly items-center m-5" key={data.id}>
-                                <Image  src={`${data.imguri}`} alt="" className="w-[150px] h-[80px] my-3 border-2 border-gray-500"/>
-                                <div className="flex flex-col justify-center items-center">
-                                    <h1 className="text-gray-300 p-4 text-center font-bold">{data.name}</h1>
-                                    <AdsClickIcon fontSize="large" className="mb-2" />
-                                </div>
+                            // <div className="bg-gray-900 w-[350px] min-h-[200Px] border-2 border-gray-500 rounded-xl flex flex-col justify-evenly items-center m-5" key={data.id}>
+                            //     <Image  src={`${data.imguri}`} alt="" className="w-[150px] h-[80px] my-3 border-2 border-gray-500"/>
+                            //     <div className="flex flex-col justify-center items-center">
+                            //         <h1 className="text-gray-300 p-4 text-center font-bold">{data.name}</h1>
+                            //         <AdsClickIcon fontSize="large" className="mb-2" />
+                            //     </div>
+                            // </div>
+                            <div className="">
+                                <img src={`${data.imguri}`} className="w-[220px] h-[150px] mx-4" alt="" />
                             </div>
                         )
                     })
                 }
-            </Fade>
+            </Zoom>
             
         </div>
 

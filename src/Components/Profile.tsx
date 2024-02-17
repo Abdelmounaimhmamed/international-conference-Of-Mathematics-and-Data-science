@@ -1,11 +1,21 @@
 import { Button, Input } from "@nextui-org/react"
 import NavBarAdmin from "./NavBarAdmin"
 import { Fade } from "react-awesome-reveal"
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 
 
 
 const Profile = () => {
+  const user = useState(JSON.parse(localStorage.getItem("admin") || ""));
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+      if(user === null || !user){
+        navigate("/login");
+      }
+  },[]) 
   return (
    
         <div>

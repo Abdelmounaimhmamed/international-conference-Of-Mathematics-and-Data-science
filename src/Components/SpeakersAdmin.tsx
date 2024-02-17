@@ -18,11 +18,22 @@ import {
     TableRow,
     TableCell
   } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 
 
 const SpeakersAdmin = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
+    // @ts-nocheck
+    const user  = useState<string>(JSON.parse(localStorage.getItem("admin") || "") );
+    const navigate = useNavigate();
+  
+    useEffect(() => {
+        if(user === null || !user){
+            navigate("/login");
+        }
+    }) 
 
   return (
     <>
@@ -56,7 +67,7 @@ const SpeakersAdmin = () => {
                                         </ModalFooter>
                                         </>
                                     )}
-                                    </ModalContent>
+                    </ModalContent>
                 </Modal>
                 <div className=" col-span-3  w-full rounded-xl">
                 <Fade>

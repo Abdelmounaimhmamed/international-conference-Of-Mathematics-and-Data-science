@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <div id="ContactUs" className="w-full flex flex-col justify-center items-center container my-3">
-        <h1 className="font-medium text-5xl my-6 develus">Send us your Data</h1>
+        <h1 className="font-medium text-5xl my-7 py-4 develus">Register</h1>
         <div className="w-[600px] rounded-2xl min-h-[200px] border-2 border-gray-500">
             <Fade className="w-full" cascade damping={0.2}>
                 <div className="flex flex-col justify-center items-center">

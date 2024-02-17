@@ -18,13 +18,25 @@ import {
     TableRow,
     TableCell
   } from "@nextui-org/react";
+import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { useNavigate } from "react-router-dom";
 
 
 
 const Partner = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
-   
+    const data = JSON.parse(localStorage.getItem("admin") || "");
+    const [user , setUser] = useState(data);
+    const navigate = useNavigate();
+    
+    useEffect(() => {
+        if(user === null || !user){
+          navigate("/login");
+        }else {
+            setUser("");
+        }
+    },[]) 
   return (
     <>
         <div className='custom-class'></div>

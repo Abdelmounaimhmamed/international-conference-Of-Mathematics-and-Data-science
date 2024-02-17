@@ -1,8 +1,19 @@
+import { useEffect, useState } from "react";
 import NavBarAdmin from "./NavBarAdmin"
-
+import { useNavigate } from "react-router-dom";
 
 
 const Community = () => {
+    
+  // @ts-ignore
+  const [user , setUser] = useState(JSON.parse(localStorage.getItem("admin")));
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+      if(user === null || !user){
+        navigate("/login");
+      }
+  },[navigate,user]);
   return (
     <div>
         <div className='custom-class'></div>

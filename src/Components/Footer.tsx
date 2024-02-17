@@ -1,15 +1,14 @@
 import { Facebook, Instagram, YouTube } from "@mui/icons-material"
-import { Button, Input } from "@nextui-org/react"
 
 
 
 const Footer = () => {
   return (
-    <div className="w-full text-gray-400 font-medium h-full custom-bg mt-10">
+    <div className="w-full text-gray-400 font-medium h-full bg-black ">
         <div className="w-full flex flex-row justify-evenly items-center flex-wrap">
             <div className="flex flex-col justify-start items-start max-w-[400px]">
                 <h1 className="text-2xl my-5">Our Conference</h1>
-                <p className="text-lg mb-3 ">Previous editions : ICMDS'23 </p>
+                <p className="text-lg mb-3 ">Previous editions : ICMDS'24 </p>
                 <p className="text-lg mb-3 ">email : icmds@usms.ma </p>
                 <p className="text-lg mb-3 ">Adress: National School of Applied Science (ENSA) Bd Béni Amir, BP 77, Khouribga - Maroc</p>
             </div>
@@ -22,10 +21,10 @@ const Footer = () => {
             </div>
             <div className="flex flex-col justify-start items-start">
                 <h1 className="text-2xl my-5">Subscribe</h1>
-                <div className="flex flex-row justify-center items-center">
+                {/* <div className="flex flex-row justify-center items-center">
                     <Input type="text" className="text-white " placeholder="Email" variant="underlined"  required/>
-                    <Button className="text-lg  bg-gray-800 my-3 mx-2 px-5 py-6" color="warning"  >Send </Button>
-                </div>
+                    <Button className="text-lg  bg-gray-800 my-3 text-white mx-2 px-5 py-6" color="warning"  >Send </Button>
+                </div> */}
                 <h1 className="text-xl my-4">Subscribe</h1>
                 <div className="w-full flex flex-row justify-start items-center">
                     <Facebook  fontSize="large"  className=" mr-6 my-3 rounded-full " />
