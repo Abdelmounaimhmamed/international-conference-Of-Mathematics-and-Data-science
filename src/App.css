@@ -22,7 +22,7 @@ body{
 
 
 .develus {
-    background: linear-gradient(90deg,#507085,#082352);
+    background: linear-gradient(90deg,#507085,#0d367e);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -259,12 +259,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
 
 .items li, a{
     text-decoration: none;
     list-style-type: none;
-    padding: 0px 7px;
+    padding: 0px 5px;
     line-height: 10px;
     color: white;
     font-weight: 500;

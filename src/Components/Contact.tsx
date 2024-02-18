@@ -12,7 +12,7 @@ const Contact = () => {
     console.log(file);
 
   return (
-    <div id="ContactUs" className="w-full flex flex-col justify-center items-center container my-3">
+    <div  id="register" className="w-full flex flex-col justify-center items-center container my-3">
         <h1 className="font-medium text-5xl my-7 py-4 develus">Register</h1>
         <div className="w-[600px] rounded-2xl min-h-[200px] border-2 border-gray-500">
             <Fade className="w-full" cascade damping={0.2}>

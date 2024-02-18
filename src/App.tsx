@@ -30,12 +30,12 @@ function App() {
       <Topic /> 
       <Comitee />
       <Program/>
-          <Call />
-          <Fees />
+      <Call />
+      <Fees />
            {/* <Journal /> */}
-          <Contact /> 
-          <Map />
-          <Footer /> 
+      <Contact /> 
+      <Map />
+      <Footer /> 
 
 
           
