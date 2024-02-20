@@ -23,17 +23,17 @@ function App() {
       <Navbar />
       <UpdaeHero />
       <AboutComponent />
-      <Fact />
       <CallPaper />
       <Speakers />
       <Orginizer />
       <Topic /> 
       <Comitee />
       <Program/>
-      <Call />
       <Fees />
-           {/* <Journal /> */}
+      <Call />
       <Contact /> 
+      <Fact />
+      {/* <Journal /> */}
       <Map />
       <Footer /> 
 

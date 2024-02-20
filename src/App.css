@@ -265,10 +265,10 @@ body {
 .items li, a{
     text-decoration: none;
     list-style-type: none;
-    padding: 0px 5px;
+    padding: 0px 4px;
     line-height: 10px;
     color: white;
-    font-weight: 500;
+
 }
 
 .change-color i{

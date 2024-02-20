@@ -2,7 +2,7 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 import { Fade } from "react-awesome-reveal"
 
 const Call = () => {
-    const mainParag = "We invite proposals for symposia for the ICMDS'21 conferene. Symposia are the scientific centerpiece of the meeting and will be assigned premium meeting space. These sessions are distinguished from other organized sessions in that they are more explicitly integrated, provide an overall synthesis on their topic, and have broad enough appeal to generate large audiences at the meeting. Proposals are encouraged to address the meeting theme. A symposium consists of at least 6 talks, each 20 minutes in length, followed by a 5-10 minutes period devoted to discussion. Proposals listing more than 8 or fewer than 6 confirmed speakers will not be considered."
+    const mainParag = "We invite proposals for symposia for the ICMDS'24 conferene. Symposia are the scientific centerpiece of the meeting and will be assigned premium meeting space. These sessions are distinguished from other organized sessions in that they are more explicitly integrated, provide an overall synthesis on their topic, and have broad enough appeal to generate large audiences at the meeting. Proposals are encouraged to address the meeting theme. A symposium consists of at least 6 talks, each 20 minutes in length, followed by a 5-10 minutes period devoted to discussion. Proposals listing more than 8 or fewer than 6 confirmed speakers will not be considered."
     const itemClasses = {
         base: "py-0 w-full",
         title: "font-medium text-xl  text-gray-300  ",

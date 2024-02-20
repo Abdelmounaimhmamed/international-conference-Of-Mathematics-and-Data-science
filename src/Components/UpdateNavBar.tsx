@@ -4,7 +4,13 @@ import { Fade, Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-
+import {
+    Dropdown,
+    DropdownTrigger,
+    DropdownMenu,
+    DropdownSection,
+    DropdownItem
+  } from "@nextui-org/react";
 
 
 
@@ -42,7 +48,7 @@ const Navbar = () => {
    
   return (
     <>
-        <div className={`Navbar flex flex-row justify-around items-center ${isFixed ? 'change-color' : ''}`}>
+        <div className={`Navbar w-full flex flex-row justify-around items-center flex-nowrap ${isFixed ? 'change-color' : ''}`}>
             <div className=''>
             <Fade cascade damping={0}>
                     <h2 className="text-4xl develus font-extrabold my-2 ">ICMDS'24</h2>
@@ -50,16 +56,30 @@ const Navbar = () => {
             </Fade>
             </div>
             <Fade cascade duration={200}>
-                <ul className='items float-end'>
+                <ul className='items '>
                     <li><Link to="/" className="text-xl font-medium">Home</Link></li>
-                    <li><a href="#callpaper" className="text-xl font-medium">CallPapers</a></li>
-                    <li><a href="#Speakers" className="text-xl  font-medium">Speakers</a></li>
-                    <li><a href="#Orginzers" className="text-xl  font-medium">Orginzers</a></li>
-                    <li><a href="#Community" className="text-xl  font-medium">Community</a></li>
-                    <li><a href="#Pogram" className="text-xl  font-medium">Pogram</a></li>
-                    <li><a href="#ContactUs" className="text-xl font-medium">ContactUs</a></li>
-                    <Button className="mx-2 text-white" variant="bordered"><Link to={"/login"} className={`text-xl  font-medium ${isFixed ? 'text-black' : ''}`}>Login</Link></Button>
-                    <Button  className={`mx-2 text-white text-xl  font-medium ${isFixed ? 'text-black' : ''}`} variant="bordered"><a href='#register'>Register</a></Button>
+                    <li><a href="#callpaper" className="text-lg font-medium">CallPapers</a></li>
+                    <li><a href="#Speakers" className="text-lg  font-medium">Speakers</a></li>
+                    <li><a href="#Orginzers" className="text-lg  font-medium">Orginzers</a></li>
+                    <li><a href="#Community" className="text-lg  font-medium">Community</a></li>
+                    <li><a href="#Pogram" className="text-lg  font-medium">Pogram</a></li>
+                    <li><a href="#ContactUs" className="text-lg font-medium">ContactUs</a></li>
+                    <Dropdown>
+                        <DropdownTrigger>
+                            <Button 
+                            variant="bordered" 
+                            className={`text-white text-lg font-medium ${isFixed ? 'text-black' : ''}`}
+                            >
+                            Previous
+                            </Button>
+                        </DropdownTrigger>
+                        <DropdownMenu aria-label="Static Actions" className='bg-black rounded-xl border-none border-black'>
+                            <DropdownItem key="copy"><a target='_blank' href='https://icmds-ma.com/' className='font-medium text-lg'>ICMDS 21</a></DropdownItem>
+                            <DropdownItem key="edit"><a target='_blank' href='https://icmds-ma.com/icmds20/published_papers' className='font-medium text-lg'>ICMDS 20</a></DropdownItem>
+                        </DropdownMenu>
+                    </Dropdown>
+                    <Button className="mx-2 text-white" variant="bordered"><Link to={"/login"} className={`text-lg  font-medium ${isFixed ? 'text-black' : ''}`}>Login</Link></Button>
+                    <Button  className={`mx-2 text-white text-lg  font-medium ${isFixed ? 'text-black' : ''}`} variant="bordered"><a href='#register'>Register</a></Button>
                 </ul>
                 <div className='xl:hidden sm:block' >
                     {state === true ? ( <MenuIcon fontSize='large'  onClick={handleClick} />) : ( <CloseIcon onClick={handleClick} />)}

@@ -18,23 +18,57 @@ import {
     TableRow,
     TableCell
   } from "@nextui-org/react";
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { Fade } from "react-awesome-reveal";
 import { useNavigate } from "react-router-dom";
+import { BASE_URI } from "./Constant";
 
 
 
 const Partner = () => {
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
     const data = JSON.parse(localStorage.getItem("admin") || "");
-    const [user , setUser] = useState(data);
+    const [imageUri,setImageUri] =  useState<string>();
+    const user = useState(data);
+    const [partners , setPartners] = useState([]);
     const navigate = useNavigate();
+
+    const fetchData = async ( ) => {
+        try {
+            const {data } = await axios.get(BASE_URI+"/getAllPartners");
+            setPartners(data);
+        } catch (error) {
+            
+        }
+    }
+    const handleAdd = async () => {
+        try {
+                const {data} = await axios.post(BASE_URI+"/createPartner" , {
+                    imageUrl :  imageUri
+                });
+                console.log(data);
+                fetchData();
+        } catch (error) {
+            console.log(error);
+        }
+    }
+    const handleDelete = async (id : number) => {
+        try {
+            const {data} = await axios.delete(BASE_URI+"/deletePartner/"+id);
+            fetchData();
+            console.log(data);
+        } catch (error) {
+            
+        }
+    } 
+
     
     useEffect(() => {
         if(user === null || !user){
           navigate("/login");
         }else {
-            setUser("");
+           fetchData();
         }
     },[]) 
   return (
@@ -52,17 +86,15 @@ const Partner = () => {
                                         <ModalHeader className="flex flex-col gap-1">Add new Partner</ModalHeader>
                                         <ModalBody>
                                             <form className="w-full  ">
-                                                <Input type="text" className="my-4" color="primary" size="lg" placeholder="Enter image url here" variant="underlined" required />
-                                                <Input type="text" className="my-4" color="primary" size="lg" placeholder="Enter partner name here" variant="underlined" required />
-                                                <Input type="text" className="my-4" color="primary" size="lg" placeholder="Enter the partner website link here " variant="underlined" required />
+                                                <Input type="text" value={imageUri} onChange={e => setImageUri(e.target.value)} className="my-4" color="primary" size="lg" placeholder="Enter image url here" variant="underlined" required />
                                             </form>
                                         </ModalBody>
                                         <ModalFooter>
                                                     <Button color="primary"  onPress={onClose}>
                                                     Close
                                                     </Button>
-                                                    <Button color="primary" onPress={onClose}>
-                                                    Action
+                                                    <Button color="primary" onPress={handleAdd}>
+                                                    add partner
                                                     </Button>
                                         </ModalFooter>
                                         </>
@@ -87,26 +119,24 @@ const Partner = () => {
                                 }}
                             >
                                 <TableHeader>
-                                    <TableColumn>title</TableColumn>
-                                    <TableColumn>full name</TableColumn>
                                     <TableColumn>imageuri</TableColumn>
                                     <TableColumn>actions</TableColumn>
                                 </TableHeader>
                                 <TableBody>
-                                    <TableRow key="1">
-                                    <TableCell>Tony Reichert</TableCell>
-                                    <TableCell>CEO</TableCell>
-                                    <TableCell>Active</TableCell>
-                                    <TableCell>
-                                        <Button className=" mx-2" color="danger">Delete</Button>
-                                    </TableCell>
-
-                                    </TableRow>
-                                    
+                                    {
+                                        partners.map((part : any) => {
+                                            return (
+                                            <TableRow key="1">
+                                                <TableCell>{part.imageUrl}</TableCell>
+                                                <TableCell>
+                                                    <Button className=" mx-2" color="danger" onPress={() => handleDelete(part.id)}>Delete</Button>
+                                                </TableCell>
+                                            </TableRow>
+                                            )
+                                        })
+                                    }
                                 </TableBody>
                             </Table>  
-
-
                             </div>
                         </div>
                     </Fade>
