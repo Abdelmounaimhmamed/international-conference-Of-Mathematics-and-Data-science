@@ -35,10 +35,10 @@ const UpdaeHero = () => {
                     <div className='social-hero-section'>
                         <div className='w-full flex flex-col justify-center items-center'>
                           <Zoom className="w-full flex flex-col justify-center items-center" cascade  damping={0.1}>
-                                        <a  href='https://www.instagram.com/data.verse2.0/' target='_blank' className='social-item-hero my-2'><Instagram fontSize="large" /></a>
-                                        <a  href='https://www.instagram.com/data.verse2.0/' target='_blank' className='social-item-hero my-2'><Mail fontSize="large" /></a>
-                                        <a  href='https://www.linkedin.com/company/dataverse1/' target='_blank' className='social-item-hero my-2'><YouTube fontSize="large" /> </a>
-                                        <a  href='https://www.facebook.com/dataverse1.0' target='_blank' className='social-item-hero my-2'><Facebook fontSize="large" /></a>
+                                <a  href='https://www.instagram.com/data.verse2.0/' target='_blank' className='social-item-hero my-2'><Instagram fontSize="large" /></a>
+                                <a  href='https://www.instagram.com/data.verse2.0/' target='_blank' className='social-item-hero my-2'><Mail fontSize="large" /></a>
+                                <a  href='https://www.linkedin.com/company/dataverse1/' target='_blank' className='social-item-hero my-2'><YouTube fontSize="large" /> </a>
+                                <a  href='https://www.facebook.com/dataverse1.0' target='_blank' className='social-item-hero my-2'><Facebook fontSize="large" /></a>
                           </Zoom>
                         </div>
                     </div>
@@ -49,8 +49,7 @@ const UpdaeHero = () => {
                     <h1 className=' text-4xl '> The international conference On</h1>
                     <p style={{fontSize:"30px" }}> </p>
                     <h1 className='capitalized'  id="typewriter">
-                        <Typewriter  
-    
+                        <Typewriter 
                             options={{
                                 strings: ['  Mathematics and Data science 2024'],
                                 autoStart: true,
@@ -60,7 +59,7 @@ const UpdaeHero = () => {
                   </h1>
                   <img src="icmds.svg" className="w-[300px] h-[150px] mb-10" alt="" />
                   {/* <p className='parag-hero-sec text-xl text-gray-300'>Work together to bring data and maths lovers together .</p>                    */}
-                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300" onPress={onOpen}> Comference Timing </Button>
+                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300 absolute bottom-0  right-1" onPress={onOpen} > Comference Timing </Button>
                  
         </div>
     </Zoom>

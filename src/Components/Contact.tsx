@@ -34,12 +34,13 @@ const Contact = () => {
             formData.append("title",title);
             formData.append("academic",academic);
             formData.append("status",status);
+            console.log(formData);
 
             const {data} = await axios.post(BASE_URI+"/register" , formData);
             console.log(data);
             toast.success("your data has been sent successfully");
         } catch (error) {
-            console.log(error);
+            toast.error("data has not been sent");
         }
     }
 
