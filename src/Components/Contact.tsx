@@ -43,8 +43,8 @@ const Contact = () => {
     }
 
   return (
-    <div  id="register" className="w-full flex flex-col justify-center items-center container my-3">
-        <h1 className="font-medium text-5xl my-7 py-4 develus">Register</h1>
+    <div  id="register" className="w-full flex flex-col justify-center items-center container ">
+        <h1 className="font-medium text-5xl my-3 py-4 develus">{"Register".toUpperCase()}</h1>
         <Toaster />
         <div className="w-[1000px] p-6 rounded-2xl min-h-[200px] border-2 border-gray-500">
             <Fade  cascade damping={0.2}>
@@ -62,9 +62,9 @@ const Contact = () => {
                             }
                         }
                     } type="file" variant="underlined" color="primary"  size="lg" className="w-[80%] my-2  text-black  border-none "/>
-                    <Input value={country} isRequired onChange={(e: any) => setCountry(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Country " className="w-[80%] text-black my-2"/>
                     </div>
                     <div className="w-full">
+                    <Input value={country} isRequired onChange={(e: any) => setCountry(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Country " className="w-[80%] text-black my-2"/>
                     <Input value={etablishment} isRequired onChange={(e: any) => setEtablishment(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Establishment " className="w-[80%] text-black my-2"/>
                     <Input value={title} isRequired onChange={(e: any) => setTitle(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Title " className="w-[80%] my-2 text-black"/>
                     <Select
@@ -82,11 +82,9 @@ const Contact = () => {
                        
                         </Select>
                     <Input value={academic} onChange={(e :any) => setAcademic(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Academic " className="w-[80%] text-black my-2"/>
+
                     <Button className="custom-bg text-xl px-7 py-5 rounded bg-gray-700 text-gray-400 my-4" onPress={handleSendToServer}>Send</Button>
-
                     </div>
-                   
-
                 </div>
             </Fade>
         </div>

@@ -7,7 +7,7 @@ import {  Card, CardBody,  CardHeader, Image } from "@nextui-org/react";
 const Fees = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center container">
-        <h1 className="font-medium text-5xl my-12 develus">Fees</h1>
+        <h1 className="font-medium text-5xl my-12 develus">{"Fees".toUpperCase()}</h1>
         <p className="text-gray-400 text-lg px-3 text-center max-w-[80%]">We offer three types of registrations. Participants should choose between these types at account creation. It is also possible to upgrade from one type to another by contacting us by email.</p>
         <div className="flex flex-row justify-center items-center flex-wrap">
             <Zoom cascade damping={0.2} >

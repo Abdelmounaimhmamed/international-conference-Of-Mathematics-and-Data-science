@@ -14,10 +14,12 @@ body{
     min-height: 100vh;
     background: rgb(0,0,0);
     background: linear-gradient(146deg, rgba(0,0,0,1) 39%, rgba(12,51,98,0.9991381562390581) 100%);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    overflow: hidden;
+
 }
 
 

@@ -4,7 +4,7 @@ const AboutComponent = () => {
 
   return (
     <div className="w-full  container xl:h-[100vh]  md:h-[100%]">
-          <h1 className="font-medium text-5xl my-12 develus text-center "> About Conference</h1>
+          <h1 className="font-medium text-5xl my-5 develus text-center "> {"About Conference".toUpperCase()}</h1>
         <div className="flex flex-row justify-center items-center flex-wrap max-w-[100%] ">
             <Zoom>
               <div className="w-[450px] box h-[230Px] m-2 bg-[#ecf5ff] rounded-xl flex flex-col justify-center items-center">

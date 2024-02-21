@@ -46,8 +46,8 @@ const UpdaeHero = () => {
     <div className="component">
     <Zoom className="component">
         <div className='flex flex-col justify-center items-center h-full  '>
-                    <h1 className='agbalou-report text-5xl my-4'> The international conference Of</h1>
-                    <p style={{fontSize:"30px" }}></p>
+                    <h1 className='agbalou-report text-5xl my-4'> The international conference On</h1>
+                    <p style={{fontSize:"30px" }}> </p>
                     <h1 className='capitalized'  id="typewriter">
                         <Typewriter  
                            

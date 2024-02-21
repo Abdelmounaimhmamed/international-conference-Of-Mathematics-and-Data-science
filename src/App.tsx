@@ -24,14 +24,14 @@ function App() {
       <UpdaeHero />
       <AboutComponent />
       <CallPaper />
-      <Speakers />
-      <Orginizer />
-      <Topic /> 
-      <Comitee />
-      <Program/>
-      <Fees />
       <Call />
+      <Topic /> 
+      <Speakers />
+      <Comitee />
+      <Orginizer />
+      <Fees />
       <Contact /> 
+      <Program/>
       <Fact />
       {/* <Journal /> */}
       <Map />

@@ -32,7 +32,9 @@ const Login = () => {
     <>
     
     <div className=''>
-        <div className='custom-class'></div>
+        <div className='custom-class'>
+          <img src='robot.jpg' alt='' />
+        </div>
           <NavBar />
           <div className='w-full h-[80vh] flex flex-col justify-center items-center'>
               <div className='flex flex-col justify-center items-center border-2 rounded-xl border-gray-500 w-[400px] h-[300px]'>

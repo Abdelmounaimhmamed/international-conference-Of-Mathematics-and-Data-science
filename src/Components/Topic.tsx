@@ -41,7 +41,7 @@ const Topic = () => {
 
   return (
     <>
-        <h1 className=" text-5xl my-12 develus text-center"> Topics & subjects  </h1>
+        <h1 className=" text-5xl my-12 develus text-center"> {"Topics & subjects ".toUpperCase()} </h1>
     <div id="" className=" flex flex-col justify-center items-center w-full my-6 py-6 ">
       
         <div className=" flex flex-row justify-center items-start flex-wrap">

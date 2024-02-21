@@ -18,7 +18,7 @@ const NavBar = () => {
         <div className="container w-[100%] h-[100px] flex flex-row justify-center items-center flex-nowrap">
                 <div className="w-full ml-20 flex flex-col justify-start items-start">
             <Fade cascade damping={0.3}>
-                    <h2 className="text-3xl develus">ICMDS'24</h2>
+                    <h2 className="text-5xl   font-bold">ICMDS'24</h2>
                     <p className="text-gray-500">NEW EDITION</p>
             </Fade>
                 </div>
