@@ -4,7 +4,7 @@ import {  Zoom } from "react-awesome-reveal";
 const Orginizer = () => {
     const someData = [
         {id : 1 , imguri : "ensa.png" , link : "" ,name : "The National School of Applied Sciences of Khouribga"},
-        {id : 2 , imguri : "amds.jpeg" , link : "" ,name : "AMMDS Morrocan Association of Mathematics and Data Science"},
+        {id : 2 , imguri : "icmds.png" , link : "" ,name : "AMMDS Morrocan Association of Mathematics and Data Science"},
         {id : 3 , imguri : "usms.jpg" , link : "" ,name : "Sultan Moulay Sliman University"},
         {id : 4 , imguri : "labo.png" , link : "" ,name : "Laboratoire Ingénierie des Procédés Informatique et Mathématiques LIPIM"},
         {id : 7 , imguri : "auf.png" , link : "1337.ma" ,name : "Agence Universitaire de la Francophonie"}
@@ -27,7 +27,7 @@ const Orginizer = () => {
                             //     </div>
                             // </div>
                             <div className="">
-                                <img src={`${data.imguri}`} className="w-[220px] h-[150px] mx-4" alt="" />
+                                <img src={`${data.imguri}`} className="w-[230px] h-[170px] mx-4" alt="" />
                             </div>
                         )
                     })

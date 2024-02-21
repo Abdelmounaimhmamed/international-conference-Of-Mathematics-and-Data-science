@@ -1,5 +1,6 @@
 import { Zoom } from "react-awesome-reveal"
 import {  Card, CardBody,  CardHeader, Image } from "@nextui-org/react";
+import {Table, TableHeader, TableColumn, TableBody, TableRow, TableCell} from "@nextui-org/react";
 
 
 
@@ -70,6 +71,44 @@ const Fees = () => {
                     </Card>                    
 
             </Zoom>
+        </div>
+        <div className=" w-full flex  flex-col justify-center items-center">
+            <h2 className="text-xl text-gray-800 w-[90%] mb-5">Once you choose your registration option. You are ought to pay the registration fees corresponding to your chosen plan. The fees are subdivided as follows:</h2>
+            <Table aria-label="Example static collection table" className="w-[90%]">
+                <TableHeader>
+                    <TableColumn className="">Participation Type	</TableColumn>
+                    <TableColumn className="">Virtual</TableColumn>
+                    <TableColumn className="">In-Person	</TableColumn>
+                    <TableColumn className="">Virtual	</TableColumn>
+                    <TableColumn className="">In-Person	</TableColumn>
+                </TableHeader>
+                <TableBody>
+                    <TableRow key="1" className="text-black font-medium">
+                    <TableCell className="font-medium text-lg">Standard Price	</TableCell>
+                    <TableCell className="font-medium text-lg">30 €	</TableCell>
+                    <TableCell className="font-medium text-lg">50 €</TableCell>
+                    <TableCell className="font-medium text-lg">80 €</TableCell>
+                    <TableCell className="font-medium text-lg">100 €</TableCell>
+                    </TableRow>
+                    <TableRow key="2" className="text-black">
+                    <TableCell className="font-medium text-lg">Student Price		</TableCell>
+                    <TableCell className="font-medium text-lg">20  €	</TableCell>
+                    <TableCell className="font-medium text-lg">35 €</TableCell>
+                    <TableCell className="font-medium text-lg">50 €</TableCell>
+                    <TableCell className="font-medium text-lg">70 €</TableCell>
+                    </TableRow>
+                </TableBody>
+            </Table>
+            <p className="text-gray-700 w-[90%] my-5">In the table above 1 € = 10 DH, beware that registrations made after 5 October 2021 will be subject to an additional fee of 50 € on top of the fees of each option. Authors submitting a paper need to pay an additional fee of 100 € per paper.</p>
+            <div className="w-[87%]">
+                <p className="text-gray-600 text-start w-full ">You can find below the bank account information of the conference:</p>
+                <ul className="text-gray-700">
+                    <li className=" list-disc">Recipient</li>
+                    <li className=" list-disc">Bank Name</li>
+                    <li className=" list-disc">IBAN</li>
+                    <li className=" list-disc">SWIFT</li>
+                </ul>
+            </div>
         </div>
 
     </div>

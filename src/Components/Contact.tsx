@@ -19,6 +19,7 @@ const Contact = () => {
     const [academic , setAcademic] = useState<string>("");
     const [status , setStatus] = useState<string>(""); 
     const [file , setFile] = useState<string | Blob >();
+ 
 
     const handleSendToServer = async () => {
         try {
@@ -33,7 +34,7 @@ const Contact = () => {
             formData.append("title",title);
             formData.append("academic",academic);
             formData.append("status",status);
-            
+
             const {data} = await axios.post(BASE_URI+"/register" , formData);
             console.log(data);
             toast.success("your data has been sent successfully");
@@ -74,11 +75,11 @@ const Contact = () => {
                         className="my-2  text-black "
                         variant="underlined"
                         color="primary"
-                        onChange={(e :any )=> setStatus(e)}
+                        onChange={(e :any )=> setStatus(e.target.value)}
                         >
-                        <SelectItem key={"1"}  className="text-black" value={"Professor"}>Professor</SelectItem>
-                        <SelectItem key={"2"}  className="text-black" value={"Student"}>Student</SelectItem>
-                        <SelectItem key={"3"}  className="text-black" value={"Others"}>Others</SelectItem>
+                        <SelectItem key={"Professor"}  className="text-black" value={"Professor"}>Professor</SelectItem>
+                        <SelectItem key={"student"}  className="text-black" value={"Student"}>Student</SelectItem>
+                        <SelectItem key={"others"}  className="text-black" value={"Others"}>Others</SelectItem>
                        
                         </Select>
                     <Input value={academic} onChange={(e :any) => setAcademic(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Academic " className="w-[80%] text-black my-2"/>

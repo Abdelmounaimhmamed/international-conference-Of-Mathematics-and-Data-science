@@ -59,7 +59,27 @@ const UpdaeHero = () => {
                         />
                   </h1>
                   {/* <p className='parag-hero-sec text-xl text-gray-300'>Work together to bring data and maths lovers together .</p>                    */}
-                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300" onPress={onOpen}> See more </Button>
+                  {/* <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300" onPress={onOpen}> See more </Button> */}
+                  <div className="flex flex-col justify-start items-start my-6 text-gray-300 text-xl">
+                  <Zoom cascade damping={0.3}>
+                      <div className="flex flex-row justify-center items-center ">
+                          <p>Full Abstract submission  &nbsp;  - &nbsp; </p><span> &nbsp; September 20, 2021</span>
+                      </div>
+                      <div  className="flex flex-row justify-center items-center my-1 ">
+                          <p>Full Paper submission - </p><span>October 05, 2021</span>
+                      </div>
+                      <div  className="flex flex-row justify-center items-center my-1">
+                          <p>Authors Notification - </p><span>October 15, 2021</span>
+                      </div>
+                      <div  className="flex flex-row justify-center items-center my-1">
+                          <p>Camera ready  - </p><span>October 05, 2021</span>
+                      </div>
+                      <div  className="flex flex-row justify-center items-center my-1">
+                          <p>Conference Dates  - </p><span>October 28-30, 2021</span>
+                      </div>
+                    </Zoom>
+                    
+                  </div>
         </div>
     </Zoom>
     </div>
@@ -72,26 +92,7 @@ const UpdaeHero = () => {
             <>
               <ModalHeader className="flex flex-col gap-1">Comference timing</ModalHeader>
               <ModalBody >
-              <div className="flex flex-col justify-start items-start text-gray-400 text-lg">
-                <Zoom cascade damping={0.3}>
-                    <div className="flex flex-row justify-center items-center">
-                        <p>Full Abstract submission  &nbsp;  - &nbsp; </p><span> &nbsp; September 20, 2021</span>
-                    </div>
-                    <div  className="flex flex-row justify-center items-center my-1 ">
-                        <p>Full Paper submission - </p><span>October 05, 2021</span>
-                    </div>
-                    <div  className="flex flex-row justify-center items-center my-1">
-                        <p>Authors Notification - </p><span>October 15, 2021</span>
-                    </div>
-                    <div  className="flex flex-row justify-center items-center my-1">
-                        <p>Camera ready  - </p><span>October 05, 2021</span>
-                    </div>
-                    <div  className="flex flex-row justify-center items-center my-1">
-                        <p>Conference Dates  - </p><span>October 28-30, 2021</span>
-                    </div>
-                  </Zoom>
-                  
-                </div>
+              
 
               </ModalBody>  
               <ModalFooter>
