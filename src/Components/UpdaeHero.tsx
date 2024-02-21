@@ -46,21 +46,35 @@ const UpdaeHero = () => {
     <div className="component">
     <Zoom className="component">
         <div className='flex flex-col justify-center items-center h-full  '>
-                    <h1 className='agbalou-report text-5xl my-4'> The international conference On</h1>
+                    <h1 className=' text-4xl '> The international conference On</h1>
                     <p style={{fontSize:"30px" }}> </p>
                     <h1 className='capitalized'  id="typewriter">
                         <Typewriter  
-                           
+    
                             options={{
-                                strings: ['  Mathematics and Data science 2024','  Mathematics and Data science 2024'],
+                                strings: ['  Mathematics and Data science 2024'],
                                 autoStart: true,
                                 loop: true,
                             }}
                         />
                   </h1>
+                  <img src="icmds.svg" className="w-[300px] h-[150px] mb-10" alt="" />
                   {/* <p className='parag-hero-sec text-xl text-gray-300'>Work together to bring data and maths lovers together .</p>                    */}
-                  {/* <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300" onPress={onOpen}> See more </Button> */}
-                  <div className="flex flex-col justify-start items-start my-6 text-gray-300 text-xl">
+                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300" onPress={onOpen}> Comference Timing </Button>
+                 
+        </div>
+    </Zoom>
+    </div>
+        
+    </div>
+    
+    <Modal isOpen={isOpen} className="bg-gray-800 h-[330px]"  onOpenChange={onOpenChange}>
+        <ModalContent>
+          {(onClose) => (
+            <>
+              <ModalHeader className="flex flex-col gap-1">Comference timing</ModalHeader>
+              <ModalBody >
+              <div className="flex flex-col justify-start items-start my-2 text-gray-300 text-lg">
                   <Zoom cascade damping={0.3}>
                       <div className="flex flex-row justify-center items-center ">
                           <p>Full Abstract submission  &nbsp;  - &nbsp; </p><span> &nbsp; September 20, 2021</span>
@@ -80,19 +94,6 @@ const UpdaeHero = () => {
                     </Zoom>
                     
                   </div>
-        </div>
-    </Zoom>
-    </div>
-        
-    </div>
-    
-    <Modal isOpen={isOpen} className="bg-gray-800 h-[330px]"  onOpenChange={onOpenChange}>
-        <ModalContent>
-          {(onClose) => (
-            <>
-              <ModalHeader className="flex flex-col gap-1">Comference timing</ModalHeader>
-              <ModalBody >
-              
 
               </ModalBody>  
               <ModalFooter>
