@@ -59,7 +59,7 @@ const UpdaeHero = () => {
                   </h1>
                   <img src="icmds.svg" className="w-[300px] h-[150px] mb-10" alt="" />
                   {/* <p className='parag-hero-sec text-xl text-gray-300'>Work together to bring data and maths lovers together .</p>                    */}
-                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300 absolute bottom-0  right-1" onPress={onOpen} > Comference Timing </Button>
+                  <Button  className="my-6 px-6 py-6 text-lg font-medium rounded bg-gray-800 text-gray-300 " onPress={onOpen} > Comference Timing </Button>
                  
         </div>
     </Zoom>

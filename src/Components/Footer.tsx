@@ -4,7 +4,7 @@ import { Facebook, Instagram, YouTube } from "@mui/icons-material"
 
 const Footer = () => {
   return (
-    <div className="w-full text-gray-400 font-medium h-full bg-black ">
+    <div  className="w-full text-gray-400 font-medium h-full bg-black " id="ContactUs">
         <div className="w-full flex flex-row justify-evenly items-center flex-wrap">
             <div className="flex flex-col justify-start items-start max-w-[400px]">
                 <h1 className="text-2xl my-5">Our Conference</h1>
