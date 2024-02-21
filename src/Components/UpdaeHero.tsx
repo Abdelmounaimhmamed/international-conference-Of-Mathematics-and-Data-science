@@ -11,11 +11,26 @@ import {
   useDisclosure,
   Button
 } from "@nextui-org/react";
+import { BASE_URI } from "./Constant";
+import axios from "axios";
 
 
 const UpdaeHero = () => {
     const [renderComponent, setRenderComponent] = useState(false);
+    const [alpine , setAlpine] = useState();
+
+    const fetchNewData = async () => {
+      try {
+        const {data} = await axios.get(BASE_URI + "/getHeroSection");
+        setAlpine(data[0]);
+        console.log(data[0]);
+      } catch (error) {
+          console.log(error);
+      }
+    }
+
     useEffect(() => {
+      fetchNewData();
       const timer = setTimeout(() => {
         setRenderComponent(true);
       }, 1500); 
@@ -23,7 +38,7 @@ const UpdaeHero = () => {
       return () => {
         clearTimeout(timer); 
       };
-    }, []);
+    }, [axios]);
     const {isOpen, onOpen, onOpenChange} = useDisclosure();
 
   return (

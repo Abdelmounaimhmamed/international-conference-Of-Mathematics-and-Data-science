@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="w-full flex flex-row justify-evenly items-center flex-nowrap bg-black">
             <h1 className="text-xl mt-2">Copyright © 2024 - All rights reserved.</h1>
-            <h1 className="text-xl mt-2"><a href="https://develus.vercel.app" target="_blank">Created with Love By<span className="text-white mx-2 text-2xl underline">Develus</span> </a></h1>
+            <h1 className="text-xl mt-2"><a href="https://develus.vercel.app" target="_blank">Created  By<span className="text-white mx-2 text-2xl underline">Develus</span> </a></h1>
         </div>
     </div>
   )
