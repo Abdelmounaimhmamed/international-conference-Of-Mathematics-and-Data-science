@@ -18,6 +18,7 @@ import axios from "axios";
 const UpdaeHero = () => {
     const [renderComponent, setRenderComponent] = useState(false);
     const [alpine , setAlpine] = useState();
+    console.log(alpine);
 
     const fetchNewData = async () => {
       try {

@@ -15,6 +15,8 @@ import Partner from './Components/Partner.tsx'
 import SpeakersAdmin from './Components/SpeakersAdmin.tsx'
 import HeroAdmin from './Components/HeroAdmin.tsx'
 import Community from './Components/Community.tsx'
+import AnimatedCursor from 'react-animated-cursor';
+
 
 
 const router = createBrowserRouter([
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <NextUIProvider>
+    <AnimatedCursor
+          innerSize={15}
+          outerSize={15}
+          color="28, 97, 157"
+          outerAlpha={0.4}
+          innerScale={0.7}
+          outerScale={5}
+        />
         <RouterProvider router={router} />    
     </NextUIProvider>
   </React.StrictMode>,
