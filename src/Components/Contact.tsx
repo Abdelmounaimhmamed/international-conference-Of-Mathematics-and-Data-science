@@ -64,6 +64,7 @@ const Contact = () => {
                         }
                     } type="file" variant="underlined" color="primary"  size="lg" className="w-[80%] my-2  text-black  border-none "/>
                     </div>
+
                     <div className="w-full">
                     <Input value={country} isRequired onChange={(e: any) => setCountry(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Country " className="w-[80%] text-black my-2"/>
                     <Input value={etablishment} isRequired onChange={(e: any) => setEtablishment(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Establishment " className="w-[80%] text-black my-2"/>

@@ -25,7 +25,7 @@ const DashBoard = () => {
                 <div className=" bg-gray col-span-1 w-full h-[100vh] bg-black ">
                    <NavBarAdmin />
                 </div>
-
+                
                 <div className=" col-span-3  w-full rounded-xl">
                     <Messages />
                 </div>

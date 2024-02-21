@@ -29,7 +29,6 @@ const Program = () => {
                             <div className="topic rounded-xl">
                                 <h2 className="class-box">08:00-09:30</h2>
                                 <p className="class-box-p">Reception of participants</p>
-
                             </div>
                             <div className="topic rounded-xl">
                                 <h2 className="class-box">08:00-09:30</h2>
@@ -37,7 +36,6 @@ const Program = () => {
 
                             </div>
                         </Fade>
-
                     </div>
                 </div>
             </CardBody>

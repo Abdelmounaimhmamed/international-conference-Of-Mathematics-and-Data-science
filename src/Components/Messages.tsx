@@ -55,16 +55,14 @@ const Messages = () => {
   return (
     <div className='w-full flex flex-col justify-center items-center '>
             <h1 className='w-[90%] text-black bg-gray-300 p-3 rounded-xl text-xl text-center my-10 font-bold'>Liste of Messages </h1>
-        <div className='w-[90%]'>
+        <div className='w-[100%] mr-5'>
             <Fade cascade damping={0.2}>
                 {isLoading === true ? (
                     <div className="w-full text-center">
                         <Spinner size="lg" />
                     </div>
                  ) : (
-
-                    <Table 
-                        aria-label="Example table with client side pagination"
+                <Table aria-label="Example table with client side pagination"
                 bottomContent={
                     <div className="flex w-full justify-center">
                     <Pagination
@@ -79,7 +77,7 @@ const Messages = () => {
                     </div>
                 }
                 classNames={{
-                    wrapper: "min-h-[222px] bg-gray-800",
+                    wrapper: "min-w-[100%] bg-gray-800",
                     th : "bg-gray-800 text-gray-300 py-3 border-b-2  rounded-xl border-gray-500 ",
                     sortIcon : "bg-gray-500",
                     td : ""
@@ -90,6 +88,9 @@ const Messages = () => {
                     <TableColumn key="role">firstName</TableColumn>
                     <TableColumn key="status">lastName</TableColumn>
                     <TableColumn key="status">phone</TableColumn>
+                    <TableColumn key="status">country</TableColumn>
+                    <TableColumn key="status">establishment</TableColumn>
+                    <TableColumn key="status">academic</TableColumn>
                     <TableColumn key="status">files</TableColumn>
                     <TableColumn key="status">actions</TableColumn>
                 </TableHeader>
@@ -102,6 +103,9 @@ const Messages = () => {
                                 <TableCell>{mesage.firstName}</TableCell>
                                 <TableCell>{mesage.lastName}</TableCell>
                                 <TableCell>{mesage.phone}</TableCell>
+                                <TableCell>{mesage.country}</TableCell>
+                                <TableCell>{mesage.establishment}</TableCell>
+                                <TableCell>{mesage.academic}</TableCell>
                                 <TableCell><Button onClick={() => handleDownload(mesage.filePath)}>Download File</Button></TableCell>
                                 <TableCell>
                                     <Button color="danger" onPress={() => handleDelete(mesage.id)}>Delete</Button>
