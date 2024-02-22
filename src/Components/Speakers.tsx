@@ -5,12 +5,15 @@ import { Avatar } from '@nextui-org/react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {  Zoom } from 'react-awesome-reveal';
 import { useState } from 'react';
+import axios from 'axios';
+import { BASE_URI } from './Constant';
 
 const Speakers = () => {
     const [data , setData] = useState([]);
     const fetcher = async () => {
         try {
-            
+            const {data} = await axios.get(BASE_URI+"");
+            console.log(data);
         } catch (error) {
             console.log(error);
         }

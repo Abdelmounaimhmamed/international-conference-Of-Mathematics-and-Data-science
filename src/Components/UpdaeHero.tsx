@@ -47,9 +47,6 @@ const UpdaeHero = () => {
         <div className='Hero relative' id="hero-section">
         <div className='opac-time' />
         <img src="fun.jpg" className='image' alt='' />
-        <img src="sigma.png" className='' alt='' />
-        <img src="pi2.png" className='  ' alt='' />
-
                 {renderComponent && (
                     <div className='social-hero-section'>
                         <div className='w-full flex flex-col justify-center items-center'>
