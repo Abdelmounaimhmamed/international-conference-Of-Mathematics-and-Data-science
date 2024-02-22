@@ -6,7 +6,7 @@ import {
   Modal, 
   ModalContent, 
   ModalHeader, 
-  ModalBody, 
+  ModalBody,
   ModalFooter,
   useDisclosure,
   Button
@@ -35,7 +35,7 @@ const UpdaeHero = () => {
       const timer = setTimeout(() => {
         setRenderComponent(true);
       }, 1500); 
-  
+
       return () => {
         clearTimeout(timer); 
       };
@@ -44,9 +44,12 @@ const UpdaeHero = () => {
 
   return (
     <>
-        <div className='Hero' id="hero-section">
+        <div className='Hero relative' id="hero-section">
         <div className='opac-time' />
-        <img src="robot.jpg" className='image' alt='' />
+        <img src="fun.jpg" className='image' alt='' />
+        <img src="sigma.png" className='' alt='' />
+        <img src="pi2.png" className='  ' alt='' />
+
                 {renderComponent && (
                     <div className='social-hero-section'>
                         <div className='w-full flex flex-col justify-center items-center'>

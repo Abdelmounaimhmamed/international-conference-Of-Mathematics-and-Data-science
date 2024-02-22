@@ -1,6 +1,35 @@
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 import { Zoom } from "react-awesome-reveal"
+import { BASE_URI } from './Constant';
 
 const AboutComponent = () => {
+  const [parag1 , setparag1] = useState<string>("");
+  const [parag2 , setparag2] = useState<string>("");
+  const [parag3 , setparag3] = useState<string>("");
+  const [parag4 , setparag4] = useState<string>("");
+  console.log(parag1);
+  console.log(parag2);
+  console.log(parag3);
+  console.log(parag4);
+  
+  const fetchers = async () => {
+    try {
+      const {data} = await axios.get(BASE_URI+"");
+      setparag1(data.parag1);
+      setparag2(data.parag2);
+      setparag3(data.parag3);
+      setparag4(data.parag4);
+
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  useEffect(() => {
+    fetchers();
+
+    return () => {};
+  }, [axios])
 
   return (
     <div className="w-full  container xl:h-[100vh]  md:h-[100%]">

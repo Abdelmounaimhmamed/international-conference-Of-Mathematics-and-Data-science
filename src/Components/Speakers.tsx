@@ -4,8 +4,18 @@ import AddLinkIcon from '@mui/icons-material/AddLink';
 import { Avatar } from '@nextui-org/react';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {  Zoom } from 'react-awesome-reveal';
+import { useState } from 'react';
 
 const Speakers = () => {
+    const [data , setData] = useState([]);
+    const fetcher = async () => {
+        try {
+            
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     const profiles = [
         {id: 1 , profile : "Caen University, France" , icon : <AddLinkIcon />, username : "A. ELMOATAZ" , place : "" , link : "" },
         {id: 2 , profile : "Polytechnique Montréal, Canada" , icon : <AddLinkIcon />, username : "I. Elhalloui " , place : "" , link : "" },
