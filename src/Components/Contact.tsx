@@ -48,10 +48,10 @@ const Contact = () => {
     <div  id="register" className="w-full flex flex-col justify-center items-center container ">
         <h1 className="font-medium text-5xl my-3 py-4 develus">{"Register".toUpperCase()}</h1>
         <Toaster />
-        <div className="w-[1000px] p-6 rounded-2xl min-h-[200px] border-2 border-gray-500">
+        <div className=" p-6 rounded-2xl min-h-[200px] border-2 border-gray-500">
             <Fade  cascade damping={0.2}>
-                <div className="flex flex-row justify-center items-center">
-                    <div className="w-full">
+                <div className="flex flex-row justify-center items-center flex-wrap">
+                    <div className="">
                     <Input isRequired value={email} onChange={(e :any) => setEmail(e.target.value)} type="email" variant="underlined" color="primary" placeholder="Enter Your email " className="w-[80%] my-2 text-xl text-black" size="lg"/>
                     <Input isRequired value={name} onChange={(e : any) => setName(e.target.value)} type="text" variant="underlined" color="primary" size="lg" placeholder="Enter Your firstName " className="w-[80%] text-black my-2"/>
                     <Input isRequired value={lastName} onChange={(e : any) => setLastName(e.target.value)} type="text" variant="underlined" color="primary" size="lg" placeholder="Enter Your lastName " className="w-[80%] text-black my-2"/>
@@ -66,7 +66,7 @@ const Contact = () => {
                     } type="file" variant="underlined" color="primary"  size="lg" className="w-[80%] my-2  text-black  border-none "/>
                     </div>
 
-                    <div className="w-full">
+                    <div className="">
                     <Input value={country} isRequired onChange={(e: any) => setCountry(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Country " className="w-[80%] text-black my-2"/>
                     <Input value={etablishment} isRequired onChange={(e: any) => setEtablishment(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Establishment " className="w-[80%] text-black my-2"/>
                     <Input value={title} isRequired onChange={(e: any) => setTitle(e.target.value)} type="tel"  variant="underlined" color="primary" size="lg" placeholder="Enter Your Title " className="w-[80%] my-2 text-black"/>

@@ -9,11 +9,10 @@ const Call = () => {
         trigger: "px-2 py-0  rounded-lg h-14 flex items-center bg-gray-900",
         indicator: "text-medium",
         content: "text-small px-2",
-        
       };
   return (
     <div className="w-full flex flex-col justify-center items-center container my-10">
-        <h1 className="font-medium text-5xl my-12 develus">CALL FOR SYMPOSIUM PROPOSALS</h1>
+        <h1 className="font-medium text-5xl my-12 develus large-title ">CALL FOR SYMPOSIUM PROPOSALS</h1>
         <div className="w-[90%]">
         <Accordion   itemClasses={itemClasses} className="mt-12 " >
             <AccordionItem key={1} title="SYMPOSIUM PROPOSALS">

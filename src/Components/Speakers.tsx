@@ -21,7 +21,7 @@ const Speakers = () => {
     }
     useEffect(() => {
         fetcher();
-    },[axios])
+    },[axios]);
 
     const profiles = [
         {id: 1 , profile : "Caen University, France" , icon : <AddLinkIcon />, username : "A. ELMOATAZ" , place : "" , link : "" },

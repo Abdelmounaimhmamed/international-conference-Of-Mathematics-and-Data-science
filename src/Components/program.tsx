@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const Program = () => {
   return (
     <div id="Pogram" className="flex flex-col justify-center items-center h-[100vh]">
-        <h1 className="font-medium text-5xl my-12 develus">CONFERENCE PROGRAM</h1>
+        <h1 className="font-medium text-5xl my-12 develus large-title">CONFERENCE PROGRAM</h1>
     <div className="flex w-full flex-col  container  " >
     <Fade cascade damping={0.2}>
         

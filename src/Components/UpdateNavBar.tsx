@@ -87,15 +87,15 @@ const Navbar = () => {
         </div>
         { state === false && (
             <div className='showed-sm'>
-            <Zoom  cascade>
+            <Zoom  cascade damping={0.1}> 
                 <ul className='items-v2'>
-                    <li><Link to="/" className="text-xl font-medium">Home</Link></li>
-                    <li><a href="#callpaper" className="text-xl font-medium">CallPapers</a></li>
-                    <li><a href="#Speakers" className="text-xl  font-medium">Speakers</a></li>
-                    <li><a href="#Orginzers" className="text-xl  font-medium">Orginzers</a></li>
-                    <li><a href="#Community" className="text-xl  font-medium">Community</a></li>
-                    <li><a href="#Pogram" className="text-xl  font-medium">Pogram</a></li>
-                    <li><a href="#ContactUs" className="text-xl font-medium">ContactUs</a></li>
+                    <li><Link to="/" onClick={handleClick} className="text-xl font-medium">Home</Link></li>
+                    <li><a onClick={handleClick} href="#callpaper" className="text-xl font-medium">CallPapers</a></li>
+                    <li><a onClick={handleClick} href="#Speakers" className="text-xl  font-medium">Speakers</a></li>
+                    <li><a onClick={handleClick} href="#Orginzers" className="text-xl  font-medium">Orginzers</a></li>
+                    <li><a onClick={handleClick} href="#Community" className="text-xl  font-medium">Community</a></li>
+                    <li><a onClick={handleClick} href="#Pogram" className="text-xl  font-medium">Pogram</a></li>
+                    <li><a onClick={handleClick} href="#ContactUs" className="text-xl font-medium">ContactUs</a></li>
                     <Button className="mx-4 text-white" variant="bordered"><Link to={"/login"} className="text-xl  font-medium">Login</Link></Button>
                 </ul>
             </Zoom>

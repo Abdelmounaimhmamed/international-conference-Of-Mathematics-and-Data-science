@@ -22,7 +22,7 @@ const Fact = () => {
   return (
     <div className="w-full h-[100%] sm:h-[100%]">
         <div className="w-full flex flex-col justify-start items-center">
-            <h1 className="text-5xl font-medium develus">{"Quick Facts Of ICMDS".toUpperCase()}</h1>
+            <h1 className="text-5xl font-medium develus large-title">{"Quick Facts Of ICMDS".toUpperCase()}</h1>
             <div className="flex flex-row justify-center items-center flex-wrap ">
                 <Zoom cascade damping={0.2}>
                         {

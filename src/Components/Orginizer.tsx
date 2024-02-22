@@ -12,7 +12,7 @@ const Orginizer = () => {
 
   return (
     <div id="Orginzers" className="w-full  flex flex-col justify-center items-center h-[100%]">
-        <h1 className="font-medium text-5xl my-12 develus">ORGANIZERS & PARTNERS</h1>
+        <h1 className="font-medium text-5xl my-12 develus large-title ">ORGANIZERS & PARTNERS</h1>
 
         <div className=" flex flex-row justify-center items-center flex-wrap">
             <Zoom cascade damping={0.2}>
