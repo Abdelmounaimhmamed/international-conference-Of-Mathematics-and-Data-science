@@ -89,7 +89,7 @@ const Navbar = () => {
             <div className='showed-sm'>
             <Zoom  cascade damping={0.1}> 
                 <ul className='items-v2'>
-                    <li><Link to="#" onClick={handleClick} className="text-xl font-medium">Home</Link></li>
+                    <li><a href="#" onClick={handleClick} className="text-xl font-medium">Home</a></li>
                     <li><a onClick={handleClick} href="#callpaper" className="text-xl font-medium">CallPapers</a></li>
                     <li><a onClick={handleClick} href="#Speakers" className="text-xl  font-medium">Speakers</a></li>
                     <li><a onClick={handleClick} href="#Orginzers" className="text-xl  font-medium">Orginzers</a></li>
