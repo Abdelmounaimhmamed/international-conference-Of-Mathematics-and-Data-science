@@ -12,7 +12,7 @@ const Speakers = () => {
     const [data , setData] = useState([]);
     const fetcher = async () => {
         try {
-            const {data : asData} = await axios.get(BASE_URI+"");
+            const {data : asData} = await axios.get(BASE_URI+"/getAllSpeakers");
             setData(asData);
             console.log(data);
         } catch (error) {

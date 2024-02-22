@@ -59,7 +59,7 @@ const Navbar = () => {
                     <li><Link to="/" className="text-xl font-medium">Home</Link></li>
                     <li><a href="#callpaper" className="text-xl  font-medium">CallPapers</a></li>
                     <li><a href="#Speakers" className="text-xl   font-medium">Speakers</a></li>
-                    <li><a href="#Orginzers" className="text-xl  font-medium">Orginzers</a></li>
+                    <li><a href="#Orginzers" className="text-xl  font-medium">Organizers</a></li>
                     <li><a href="#Community" className="text-xl  font-medium">Community</a></li>
                     <li><a href="#Pogram" className="text-xl     font-medium">Pogram</a></li>
                     <li><a href="#ContactUs" className="text-xl font-medium">ContactUs</a></li>

@@ -1,7 +1,23 @@
+import axios from "axios";
+import { useEffect, useState } from "react";
 import {  Zoom } from "react-awesome-reveal";
+import { BASE_URI } from "./Constant";
 
 
 const Orginizer = () => {
+    const [org , setOrg] = useState([]);
+    const fetchers = async () => {
+        const  {data} = await axios.get(BASE_URI + "/getAllPartners");
+        setOrg(data);
+        console.log(org);
+    }
+
+    useEffect(() => {
+        fetchers();
+        return ;
+    } , [axios]);
+
+
     const someData = [
         {id : 1 , imguri : "ensa.png" , link : "" ,name : "The National School of Applied Sciences of Khouribga"},
         {id : 2 , imguri : "icmds.png" , link : "" ,name : "AMMDS Morrocan Association of Mathematics and Data Science"},
